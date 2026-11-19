@@ -25,9 +25,9 @@
 <meta name="twitter:image" content="https://theamfclub.com/og-image.png">
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<script src="assets/js/00-config.js?v=20261118l"></script>
-<script src="assets/js/11-shows-data.js?v=20261118l"></script>
-<link rel="stylesheet" href="assets/css/app.css?v=20261118l">
+<script src="assets/js/00-config.js?v=20261119a"></script>
+<script src="assets/js/11-shows-data.js?v=20261119a"></script>
+<link rel="stylesheet" href="assets/css/app.css?v=20261119a">
 </head>
 <body>
 <a class="skip" href="#mainContent">본문으로 건너뛰기</a>
@@ -681,6 +681,45 @@
       <span class="mono">cueBuildLogs()</span> 한 곳만 교체하면 됩니다.
     </div>
 
+    
+    <div class="card" id="cuePatArch">
+      <div class="chd"><h3>플랫폼 아키텍처 속 특허 구성</h3>
+        <span class="sub">등록특허 제10-2278814호</span></div>
+      <div class="cbd pa-grid">
+        <div>
+          <div class="cuelbl">3계층 구조</div>
+          <ol class="pa-stack">
+            <li class="pa-l"><span class="pa-no">L3</span>
+              <div><b>브랜드 · 팬 서비스</b></div></li>
+            <li class="pa-l l2"><span class="pa-no">L2</span>
+              <div><b>AI Service</b>
+                <div class="pa-mods">
+                  <div class="pa-mod"><b>6축 매칭 엔진</b><i>규칙 기반 산식</i></div>
+                  <div class="pa-mod pat"><b>특허 예측 모듈</b><i>라이브 편성 구간 예측</i></div>
+                </div></div></li>
+            <li class="pa-l"><span class="pa-no">L1</span>
+              <div><b>계약 · 정산 · 성과 데이터</b><i>Single Source of Truth</i></div></li>
+          </ol>
+        </div>
+        <div>
+          <div class="cuelbl">처리 흐름</div>
+          <ol class="pa-flow">
+            <li><b>이벤트 수집</b><span>방송 구간 · 반응대 · 시각 로그</span></li>
+            <li><b>URL 그룹핑 · Skip-gram 웹 임베딩</b><span>구간 × 반응대를 한 묶음으로 → 구간 임베딩</span></li>
+            <li><b>GRU 순환 예측</b><span>최근 3개 구간 시퀀스를 입력</span></li>
+            <li><b>완전 연결 · 소프트맥스</b><span>다음 구간 확률 출력</span></li>
+            <li><b>다음 구간 예측 · 선반영</b><span>신뢰도 35% 이상이면 소재를 미리 준비</span></li>
+          </ol>
+          <div class="cuelbl">적용 현황</div>
+          <ul class="pa-status">
+            <li><span class="tag g">적용 중</span><span>라이브 편성 구간 예측 (이 화면)</span></li>
+            <li><span class="tag n">계획 · 1년 차</span><span>매칭 · 추천 순위 반영 (아직 적용 전)</span></li>
+            <li><span class="tag b">규칙 기반</span><span>6축 적합도 점수는 규칙 기반 산식이며, 특허 모듈을 쓰지 않습니다</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="kpis" id="cueKpis"></div>
 
     <div class="card">
@@ -848,21 +887,21 @@
   <div class="dbd" id="dBody"></div>
 </aside>
 
-<script src="data/roster.js?v=20261118l"></script>
-<script src="assets/js/01-core-i18n.js?v=20261118l"></script>
-<script src="assets/js/02-taxonomy.js?v=20261118l"></script>
-<script src="assets/js/03-dataset.js?v=20261118l"></script>
-<script src="assets/js/04-engine.js?v=20261118l"></script>
-<script src="assets/js/05-ui.js?v=20261118l"></script>
-<script src="assets/js/06-extensions.js?v=20261118l"></script>
-<script src="assets/js/07-data-adapter.js?v=20261118l"></script>
-<script src="assets/js/08-report-ai.js?v=20261118l"></script>
-<script src="assets/js/09-service-shell.js?v=20261118l"></script>
-<script src="assets/js/10-live-rundown.js?v=20261118l"></script>
-<script src="assets/js/12-plans.js?v=20261118l"></script>
-<script src="assets/js/13-home.js?v=20261118l"></script>
-<script src="assets/js/14-install.js?v=20261118l"></script>
-<script src="assets/js/15-assistant.js?v=20261118l"></script>
+<script src="data/roster.js?v=20261119a"></script>
+<script src="assets/js/01-core-i18n.js?v=20261119a"></script>
+<script src="assets/js/02-taxonomy.js?v=20261119a"></script>
+<script src="assets/js/03-dataset.js?v=20261119a"></script>
+<script src="assets/js/04-engine.js?v=20261119a"></script>
+<script src="assets/js/05-ui.js?v=20261119a"></script>
+<script src="assets/js/06-extensions.js?v=20261119a"></script>
+<script src="assets/js/07-data-adapter.js?v=20261119a"></script>
+<script src="assets/js/08-report-ai.js?v=20261119a"></script>
+<script src="assets/js/09-service-shell.js?v=20261119a"></script>
+<script src="assets/js/10-live-rundown.js?v=20261119a"></script>
+<script src="assets/js/12-plans.js?v=20261119a"></script>
+<script src="assets/js/13-home.js?v=20261119a"></script>
+<script src="assets/js/14-install.js?v=20261119a"></script>
+<script src="assets/js/15-assistant.js?v=20261119a"></script>
 <style>
 .demo-note{margin:0 0 10px;font-size:11.5px;color:var(--ink3, #7a8296);line-height:1.6}
 </style>
